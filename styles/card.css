@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 2px 2px 15px 0 rgba(0,0,0,.5);
+    margin: 10px;
+}
+
+.card__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.card__left > span {
+    font-weight: 500;
+}
+
+.card__left > a {
+    margin-top: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.card__left p {
+    color: gray;
+}
+
+.card__right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card__right > img {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+}
+
+@media screen and (width >= 1000px) {
+    .card {
+        width: 40%;
+    }
+}
